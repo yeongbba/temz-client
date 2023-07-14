@@ -1,5 +1,7 @@
 :root {
-    --white-color: white;
-    --black-color: black;
-    --light-gray-color: #B3B3B3;
+    --white-color-0: white;
+    --black-color-0: black;
+    --gray-color-0: #EBEBEB;
+    --gray-color-1: #B3B3B3;
+    --overlay-gray-color: rgba(0, 0, 0, 0.5);
 }

@@ -8,10 +8,9 @@ import { usePathname } from 'next/navigation';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsChatLeftDots } from 'react-icons/bs';
 import { IoMdNotificationsOutline } from 'react-icons/io';
-import Button from '../common/Button/Button';
 import HamburgerMenuIcon from '../common/icons/HamburgerMenuIcon/HamburgerMenuIcon';
-import { useState } from 'react';
-import Drawer from '../common/Drawer/Drawer';
+import { useDrawer } from '@/app/context/DrawerContext';
+import BasicButton from '../common/buttons/BasicButton/BasicButton';
 
 
 const menus = [
@@ -32,10 +31,7 @@ const menus = [
 export default function Navbar() {
   const pathName = usePathname();
 
-  const [isOpen, setIsOpen] = useState(false)
-  const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState)
-  }
+  const { onToggleDrawer } = useDrawer();
 
   return (
     <section className={styles.container}>
@@ -60,16 +56,16 @@ export default function Navbar() {
             <li><AiOutlineSearch /></li>
             <li><BsChatLeftDots /></li>
             <li><IoMdNotificationsOutline /></li>
-            <li className={styles.hamburger} onClick={toggleDrawer}><HamburgerMenuIcon /></li>
+            <li className={styles.hamburger} onClick={onToggleDrawer}><HamburgerMenuIcon /></li>
           </ul>
           <div className={styles.btns}>
-            <Button
+            <BasicButton
               disabled={true}
               text={'로그인'}
               onClick={() => { }}
               white={true}
             />
-            <Button
+            <BasicButton
               disabled={true}
               text={'회원가입'}
               onClick={() => { }}

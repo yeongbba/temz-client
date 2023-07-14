@@ -1,0 +1,22 @@
+.btn {
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.white {
+    background-color: var(--black-color-0);
+    color: var(--white-color-0);
+}
+
+.gray {
+    background-color: var(--gray-color-0);
+    color: var(--black-color-0);
+}
+
+.disabled {
+    opacity: 0.8;
+}
