@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:38dfed5269f519265adef4e03771b2217b8937eca7a64b69dd475bf044ed7a93575e0f7066604cac322c01d310291379a7e69a86fcec4d80b23e63f2924b1050#npm:18.2.0"],\
             ["react-icons", "virtual:38dfed5269f519265adef4e03771b2217b8937eca7a64b69dd475bf044ed7a93575e0f7066604cac322c01d310291379a7e69a86fcec4d80b23e63f2924b1050#npm:4.10.1"],\
+            ["react-multi-carousel", "npm:2.8.4"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -2916,6 +2917,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-multi-carousel", [\
+        ["npm:2.8.4", {\
+          "packageLocation": "./.yarn/cache/react-multi-carousel-npm-2.8.4-e0619af128-ed4d95630f.zip/node_modules/react-multi-carousel/",\
+          "packageDependencies": [\
+            ["react-multi-carousel", "npm:2.8.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["regenerator-runtime", [\
         ["npm:0.13.11", {\
           "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.11-90bf536060-27481628d2.zip/node_modules/regenerator-runtime/",\
@@ -3312,6 +3322,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:38dfed5269f519265adef4e03771b2217b8937eca7a64b69dd475bf044ed7a93575e0f7066604cac322c01d310291379a7e69a86fcec4d80b23e63f2924b1050#npm:18.2.0"],\
             ["react-icons", "virtual:38dfed5269f519265adef4e03771b2217b8937eca7a64b69dd475bf044ed7a93575e0f7066604cac322c01d310291379a7e69a86fcec4d80b23e63f2924b1050#npm:4.10.1"],\
+            ["react-multi-carousel", "npm:2.8.4"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
