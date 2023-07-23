@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ScrollableBar from './components/common/ScrollableBar/ScrollableBar'
 import styles from './page.module.css'
 import banner from '../../public/img/banner.png';
+import Login from './components/Login/Login';
 
 
 const responsive = {
@@ -29,14 +30,23 @@ export default function Home() {
 
   return (
     <section className={styles.main}>
-      <ScrollableBar responsive={responsive}>
-        <div className={styles.ban}>
-          <Image src={banner} alt={`banner1`} priority fill />
+      <div className={styles.bannerContainer}>
+        <div className={styles.banner}>
+          <ScrollableBar responsive={responsive} autoPlay={false} showDots={false}>
+            <div className={styles.ban}>
+              <Image src={banner} alt={`banner1`} priority fill />
+            </div>
+          </ScrollableBar>
         </div>
-        <Image src={banner} alt={`banner2`} fill />
-        <Image src={banner} alt={`banner3`} fill />
-        <Image src={banner} alt={`banner4`} fill />
-      </ScrollableBar>
+        <div className={styles.login}>
+          <Login userInfo={{}} />
+        </div>
+      </div>
+      <div className={styles.mainContainer}>
+        <div className={styles.inTheBag}>
+
+        </div>
+      </div>
     </section>
   )
 }

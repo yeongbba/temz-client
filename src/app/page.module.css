@@ -1,6 +1,4 @@
-.main {
-  height: 100vh;
-}
+.main {}
 
 /* .main {
   display: flex;
@@ -230,15 +228,33 @@
 
 
 
-.banner {
+/* .banner {
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   background-image: url(https://images.unsplash.com/photo-1682695797873-aa4cb6edd613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80);
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.bannerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
+.banner {
+  width: 120rem;
+}
+
+
 .ban {
-  height: 30rem;
+  height: 35rem;
   width: 100%;
+}
+
+.login {
+  position: absolute;
+  bottom: -4rem;
+  left: 20%;
 }
