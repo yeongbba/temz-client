@@ -68,6 +68,10 @@
         justify-content: flex-end;
     }
 
+    .logo {
+        margin-right: 0;
+    }
+
     .leftMenus {
         display: none;
     }

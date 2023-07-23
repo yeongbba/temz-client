@@ -5,12 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../../public/img/logo.png';
 import { usePathname } from 'next/navigation';
-import { AiOutlineSearch } from 'react-icons/ai';
 import { BsChatLeftDots } from 'react-icons/bs';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import HamburgerMenuIcon from '../common/icons/HamburgerMenuIcon/HamburgerMenuIcon';
 import { useDrawer } from '@/app/context/DrawerContext';
 import BasicButton from '../common/buttons/BasicButton/BasicButton';
+import SearchIcon from '../common/icons/SearchIcon/SearchIcon';
 
 
 const menus = [
@@ -53,7 +53,7 @@ export default function Navbar() {
         </div>
         <div className={styles.rightMenus}>
           <ul className={styles.icons}>
-            <li><AiOutlineSearch /></li>
+            <li><SearchIcon /></li>
             <li><BsChatLeftDots /></li>
             <li><IoMdNotificationsOutline /></li>
             <li className={styles.hamburger} onClick={onToggleDrawer}><HamburgerMenuIcon /></li>
