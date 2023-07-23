@@ -5,12 +5,16 @@ import 'react-multi-carousel/lib/styles.css';
 import styles from './ScrollableBar.module.css';
 
 type Props = {
-    responsive: ResponsiveType
+    responsive: ResponsiveType,
+    autoPlay: boolean,
+    showDots: boolean,
     children?: React.ReactNode
 }
 
 export default function ScrollableBar({
     responsive,
+    autoPlay = true,
+    showDots = true,
     children,
 }: Props) {
     return (
@@ -18,9 +22,9 @@ export default function ScrollableBar({
             responsive={responsive}
             containerClass={styles['react-multi-carousel-list']}
             dotListClass={styles['react-multi-carousel-dot-list']}
-            autoPlay={true}
+            autoPlay={autoPlay}
             autoPlaySpeed={5000}
-            showDots={true}
+            showDots={showDots}
             infinite={true}
             arrows={false}>
             {children}
